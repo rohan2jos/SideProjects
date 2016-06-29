@@ -1,3 +1,15 @@
-<div>
-    <h1>Welcome to the home div</h1>
+<div class="row">
+	<div class="col-md-12" align="center">
+		<h3>Here's some of our art</h3>
+	</div>
+	<div class="col-md-4" ng-repeat="product in products">
+		<div class="w3-card-12 w3-dark-grey w3-center">
+			<img src="{{product.image}}" style="width: 200px; height: 200px;" alt="Norway">
+			<div class="w3-container w3-center">
+		  		<p>{{product.name}}, by {{product.author}}</p>
+		  	</div>
+		</div>	
+		<br>
+	</div>
+
 </div>
