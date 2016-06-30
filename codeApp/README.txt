@@ -18,6 +18,9 @@ V1.5. Added a floating button that has 'no functionality'
 V1.6. Added zoom to the images.  However, there is no angular logic backing this functionlity
 	so for now, the image zoom will always display the first image
 
+V1.7. Added a naive slideshow to the homepage.  This just displays static images for now and there no angular logic to back it.
+V1.8. Added a modal for login
+
 
 
 
