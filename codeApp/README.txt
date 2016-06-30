@@ -20,6 +20,8 @@ V1.6. Added zoom to the images.  However, there is no angular logic backing this
 
 V1.7. Added a naive slideshow to the homepage.  This just displays static images for now and there no angular logic to back it.
 V1.8. Added a modal for login
+V1.9 Extras:
+ Adding content and images 
 
 
 
