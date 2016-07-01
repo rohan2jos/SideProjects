@@ -24,6 +24,9 @@ V1.9 Extras:
  Adding content and images 
 
 
+B1.0  merged some changes adding images
+B1.1  added work page
+
 
 
 
