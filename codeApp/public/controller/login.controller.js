@@ -1,4 +1,4 @@
-angular.module("codeApp").controller("loginController", function($scope, $rootScope){
+angular.module("codeApp").controller("loginController", function($scope, $rootScope, $location){
 
 	$scope.login = login;	
 
@@ -22,6 +22,7 @@ angular.module("codeApp").controller("loginController", function($scope, $rootSc
 				console.log("Welcome, " + $scope.user.username);
                 $rootScope.currentUser = $scope.users[i];
                 console.log("login controller sets the rootscope user as " + $rootScope.currentUser.username);
+                $location.url("/home");
 				break;
 			}
 		}
