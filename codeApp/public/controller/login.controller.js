@@ -1,4 +1,4 @@
-angular.module("codeApp").controller("loginController", function($scope){
+angular.module("codeApp").controller("loginController", function($scope, $rootScope){
 
 	$scope.login = login;	
 
@@ -20,6 +20,8 @@ angular.module("codeApp").controller("loginController", function($scope){
 			console.log("checking for " + $scope.users[i].username);
 			if($scope.users[i].username == $scope.user.username && $scope.users[i].password == $scope.user.password){
 				console.log("Welcome, " + $scope.user.username);
+                $rootScope.currentUser = $scope.users[i];
+                console.log("login controller sets the rootscope user as " + $rootScope.currentUser.username);
 				break;
 			}
 		}
