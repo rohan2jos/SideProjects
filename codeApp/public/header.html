@@ -10,7 +10,7 @@
       </button>
       <a class="navbar-brand" href="#">CodeApp</a>
     </div>
-
+8055599910
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
@@ -31,16 +31,16 @@
     <a href="javascript:void(0);" onclick="myFunction()">☰</a>
   </li>
   	<li><a href="#">Home</a></li>
- 	<li class="w3-hide-small"><a href="#/about">About</a></li>
-	<li class="w3-hide-small"><a href="#/contact">Contact</a></li>
-	<li class="w3-hide-small w3-right" ng-hide="currentUser"><a href="#/login">Login</a></li>
-    <li class="w3-hide-small w3-right" ng-hide="currentUser">
-        <a href="#">
+ 	<li class="w3-hide-small" ng-animate="'animate'"><a href="#/about">About</a></li>
+	<li class="w3-hide-small" ng-animate="'animate'"><a href="#/contact">Contact</a></li>
+	<li class="w3-hide-small w3-right" ng-animate="'animate'" ng-hide="currentUser"><a href="#/login">Login</a></li>
+    <li class="w3-hide-small w3-right" ng-animate="'animate'" ng-hide="currentUser">
+        <a href="#/register">
             Register
         </a>
     </li>
-    <li class="w3-hide-small w3-right" ng-show="currentUser" ng-click="logout()"><a>Logout</a></li>
-    <li class="w3-hide-small w3-right" ng-show="currentUser">
+    <li class="w3-hide-small w3-right" ng-animate="'animate'" ng-show="currentUser" ng-click="logout()"><a>Logout</a></li>
+    <li class="w3-hide-small w3-right" ng-animate="'animate'" ng-show="currentUser">
         <a href="#">
             Hello, {{currentUser.username}}
         </a>
@@ -53,7 +53,7 @@
 		<li><a href="#/about">About</a></li>
 		<li><a href="#/contact">Contact</a></li>
 		<li ng-hide="currentUser"><a href="#/login">Login</a></li>
-		<li><a href="#/" ng-hide="currentUser">Register</a></li>
+		<li><a href="#/register" ng-hide="currentUser">Register</a></li>
           <li><a ng-show="currentUser">Hello, {{currentUser.username}}</a></li>	
           <li ng-show="currentUser" ng-click="logout()"><a>Logout</a></li>
   </ul>

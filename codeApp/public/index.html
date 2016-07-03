@@ -10,7 +10,7 @@
 
 	<!-- Including the W3.CSS file, this is for the cards and some other cool things that this CSS has -->
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-
+    <link rel="stylesheet" href="style.css">
 	<!-- External fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
 
@@ -22,7 +22,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>   
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-route.js"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-animate.min.js"></script>
         <script src="app.js"></script>
 
         <script src="controller/main.controller.js"></script> 
@@ -37,7 +37,9 @@
     
         <script src="../controller/header.controller.js"></script>
         <script src="controller/main.controller.js"></script>
-
+        <script src="controller/register.controller.js"></script>
+        <script src="controller/user.service.js"></script>
+    
     </head>
 
     <body ng-controller="MainController" style="background-color: #E0E0E0;">
@@ -47,7 +49,7 @@
         </div>
        
        
-        <div class="container" ng-view>
+        <div class="container view-slide-in" ng-view>
         </div>
 
         
