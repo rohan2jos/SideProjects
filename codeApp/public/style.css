@@ -84,3 +84,16 @@
 .hide-fade.ng-hide-remove.ng-hide-remove-active {
   opacity:1;
 }
+
+
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+    
