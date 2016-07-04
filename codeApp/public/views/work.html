@@ -1,6 +1,45 @@
 
-<div class="jumbotron">
-    <h2>Folkish by Ashish Kumar.</h2>
+<style>
+.w3-lobster {
+  font-family: "Lobster", serif;
+}
 
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+ 
+</style>
+
+<div class="row">
+
+	<div class="col-md-12" align="center">
+		<p class="w3-xxxlarge">Welcome</p>
+	</div>
+
+    <!-- end of slideshow javascript -->
+    
+    <div class="col-md-12" align="center">
+		<p class="w3-xxxlarge">See some more of our Art!</p>
+	</div>
+	
+	
+	<div class="col-md-4" ng-repeat="product in products">
+		<div class="w3-card-12 w3-dark-grey">
+			<img src="{{product.image}}" style="width: 100%;" alt="{{product.name}}" onclick="document.getElementById('modal01').style.display='block'">
+			<div class="w3-container w3-center" style="padding: 5px;">
+		  		<p>{{product.name}}, by {{product.author}}</p>
+				<a class="w3-btn-floating-large w3-teal">+</a>
+		  	</div>
+		</div>
+		<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+			  <span class="w3-closebtn w3-hover-red w3-container w3-padding-16 w3-display-topright">&times;</span>
+			  <div class="w3-modal-content w3-animate-zoom">
+			    <img src="{{product.image}}" style="width:100%">
+			  </div>
+		</div>
+		<br>
+	</div>
 
 </div>
