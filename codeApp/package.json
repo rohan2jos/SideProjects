@@ -10,9 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular-animate": "^1.5.7",
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
-    "multer": "^1.1.0"
+    "https": "^1.0.0",
+    "multer": "^1.1.0",
+    "node-uuid": "^1.4.7"
   }
 }

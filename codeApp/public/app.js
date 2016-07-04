@@ -3,7 +3,7 @@
     06/28/2016
 */
 
-var app = angular.module('codeApp', ['ngRoute']);
+var app = angular.module('codeApp', ['ngRoute', 'ngAnimate']);
 
 app.config(['$routeProvider', function($routeProvider){
     $routeProvider
@@ -23,6 +23,10 @@ app.config(['$routeProvider', function($routeProvider){
 	templateUrl: './views/contact.html',
 	controller: "contactController"	
 	})
+    .when('/register', {
+        templateUrl: "./views/register.html",
+        controller: "registerController"
+    })
 	.when('/login', {
 	templateUrl: './views/login.html',
 	controller: "loginController"
