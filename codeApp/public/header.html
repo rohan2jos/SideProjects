@@ -39,7 +39,7 @@
             Register
         </a>
     </li>
-    <li class="w3-hide-small w3-right" ng-animate="'animate'" ng-show="currentUser" ng-click="logout()"><a>Logout</a></li>
+    <li class="w3-hide-small w3-right" ng-animate="'animate'" ng-show="currentUser" onclick="Materialize.toast('See you soon! :)', 2000)" ng-click="logout()"><a>Logout</a></li>
     <li class="w3-hide-small w3-right" ng-animate="'animate'" ng-show="currentUser">
         <a href="#">
             Hello, {{currentUser.username}}
