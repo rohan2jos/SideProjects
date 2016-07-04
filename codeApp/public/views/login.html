@@ -1,22 +1,30 @@
+
+
+
 <div class="container">
-	
-	<div class="w3-container w3-blue">
-		<h2>Login</h2>
+	<div class="w3-card-4" style="width:100%;">
+	 
+	<header class="w3-container w3-dark-grey w3-center">
+		<h1>Login</h1>
+	</header>
+
+	<div class="w3-container" style="background-color: white;">
+		<form class="w3-container" style="background-color: white;">
+
+			<p>
+				<label>Username</label>
+				<input class="w3-input" placeholder="username" type="text" ng-model="user.username" required>
+			</p>
+
+			<p>
+				<label>Password</label>
+				<input class="w3-input" placeholder="password" type="password" ng-model="user.password" required>
+			</p>
+
+			<p class="w3-center"><button class="w3-btn w3-teal w3-center" ng-click="login()" type="submit">Get In!</button></p>
+			<br>
+		</form>	
 	</div>
 
-	<form class="w3-container">
-
-		<p>
-			<label>Username</label>
-			<input class="w3-input" placeholder="username" type="text" ng-model="user.username">
-		</p>
-
-		<p>
-			<label>Password</label>
-			<input class="w3-input" placeholder="password" type="password" ng-model="user.password">
-		</p>
-
-		<button class="btn btn-primary" ng-click="login()" type="submit">Get In!</button>
-
-	</form>
+	</div>
 </div>
