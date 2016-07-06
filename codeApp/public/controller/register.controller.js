@@ -7,6 +7,7 @@ angular.module("codeApp").controller("registerController", function($scope, $roo
         console.log("trying to register user " + $scope.user);
         // we will send the user as is in the json format to the user service    
         UserService.createUser($scope.user);
+        UserService.setCurrentUser($scope.user);    
         $location.url("/home");
     }
     
