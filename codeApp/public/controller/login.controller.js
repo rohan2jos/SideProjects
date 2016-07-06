@@ -1,4 +1,4 @@
-angular.module("codeApp").controller("loginController", function($scope, $rootScope, $location, UserService){
+angular.module("codeApp").controller("loginController", function($scope, $rootScope, $location, UserService, ngToast){
 
 	$scope.login = login;	
 

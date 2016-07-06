@@ -3,7 +3,7 @@
     06/28/2016
 */
 
-var app = angular.module('codeApp', ['ngRoute', 'ngAnimate']);
+var app = angular.module('codeApp', ['ngRoute', 'ngAnimate', 'ngToast']);
 
 app.config(['$routeProvider', function($routeProvider){
     $routeProvider

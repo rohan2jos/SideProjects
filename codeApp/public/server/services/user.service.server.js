@@ -7,11 +7,36 @@ module.exports = function(app, userModel){
     
     
     function createUser(req, res){
-        console.log("[createUser] hit the backend, first checkpoint reached");
-        var user = req.body;
-        console.log("The user that is requesting to be inserted is " + user);
-        var userCreated = userModel.createUser(user);
-        res.json(userCreated);
+//        console.log("[createUser] hit the backend, first checkpoint reached");
+//        var user = req.body;
+//        console.log("The user that is requesting to be inserted is " + user);
+//        var userCreated = userModel.createUser(user);
+//        
+        var newUser = req.body;
+        
+        userModel.findUserByUsername(newUser.username)
+            .then(function(user){
+            if(user == null){
+                return userModel.createUser(newUser);
+            }else{
+                res.json(null);
+            }
+        }, function(err){
+            res.status(400).send(err);
+        }).then(function(user){
+            if(user){
+                req.login(user, function(err){
+                    if(err){
+                        res.status(400).send(err);
+                    }else{
+                        res.json(user);
+                    }
+                });
+            }
+        }, function(err){
+            res.status(400).send(err);
+        });
+        
     }
     
     
