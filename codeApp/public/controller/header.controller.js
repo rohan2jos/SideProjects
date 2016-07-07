@@ -1,4 +1,4 @@
-angular.module("codeApp").controller("headerController", function($location,$rootScope,$scope){
+angular.module("codeApp").controller("headerController", function($location,$rootScope,$scope, UserService){
     
     $scope.logout = logout;
     $scope.test = test;
@@ -13,7 +13,7 @@ angular.module("codeApp").controller("headerController", function($location,$roo
     
     function logout(){
         console.log("logging out");
-        $rootScope.currentUser = null;
+        UserService.setCurrentUser(null);
     }
     
 });
