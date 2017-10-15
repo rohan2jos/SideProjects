@@ -1,0 +1,205 @@
+01:07:54 PM  main() INFO:  entered main
+01:07:54 PM  main() DEBUG:  opening socket
+01:07:54 PM  main() DEBUG:  setting socket resuse at: 1
+01:07:54 PM  main() DEBUG:  binding socket at port: 5001
+01:07:54 PM  main() DEBUG:  waiting for incoming data on socket...
+01:12:22 PM  main() INFO:  entered main
+01:12:22 PM  main() DEBUG:  opening socket
+01:12:22 PM  main() DEBUG:  setting socket resuse at: 1
+01:12:22 PM  main() DEBUG:  binding socket at port: 5001
+01:12:22 PM  main() DEBUG:  waiting for incoming data on socket...
+01:13:15 PM  main() INFO:  entered main
+01:13:15 PM  main() DEBUG:  opening socket
+01:13:15 PM  main() DEBUG:  setting socket resuse at: 1
+01:13:15 PM  main() DEBUG:  binding socket at port: 5001
+01:13:15 PM  main() DEBUG:  waiting for incoming data on socket...
+01:14:29 PM  main() INFO:  entered main
+01:14:29 PM  main() DEBUG:  opening socket
+01:14:29 PM  main() DEBUG:  setting socket resuse at: 1
+01:14:29 PM  main() DEBUG:  binding socket at port: 5001
+01:14:29 PM  main() DEBUG:  waiting for incoming data on socket...
+01:14:37 PM  main() INFO:  hello
+01:14:37 PM  main() INFO:  ('127.0.0.1', 58324)
+01:14:37 PM  main() DEBUG:  closing socket
+01:18:13 PM  main() INFO:  entered main
+01:18:13 PM  main() DEBUG:  opening socket
+01:18:13 PM  main() DEBUG:  setting socket resuse at: 1
+01:18:13 PM  main() DEBUG:  binding socket at port: 5001
+01:18:13 PM  main() DEBUG:  waiting for incoming data on socket...
+01:18:26 PM  main() DEBUG:  receiving a connection from: 
+01:18:26 PM  main() DEBUG:  ('127.0.0.1', 33279)
+01:18:26 PM  main() DEBUG:  message that was received was: hello
+01:18:26 PM  main() INFO:  hello
+01:18:26 PM  main() INFO:  ('127.0.0.1', 33279)
+01:18:26 PM  main() DEBUG:  closing socket
+01:22:31 PM  main() INFO:  entered main
+01:22:31 PM  main() DEBUG:  opening socket
+01:22:31 PM  main() DEBUG:  setting socket resuse at: 1
+01:22:31 PM  main() DEBUG:  binding socket at port: 5001
+01:22:31 PM  main() DEBUG:  waiting for incoming data on socket...
+01:22:39 PM  main() DEBUG:  receiving a connection from: 
+01:22:39 PM  main() DEBUG:  ('127.0.0.1', 58537)
+01:22:39 PM  main() DEBUG:  message that was received was: hello!
+01:22:39 PM  main() INFO:  hello!
+01:22:39 PM  main() INFO:  ('127.0.0.1', 58537)
+01:22:39 PM  main() DEBUG:  closing socket
+01:24:54 PM <module>() INFO:  entered main
+01:24:54 PM <module>() DEBUG:  opening socket
+01:24:54 PM <module>() DEBUG:  setting socket resuse at: 1
+01:24:54 PM <module>() DEBUG:  binding socket at port: 5001
+01:24:54 PM <module>() DEBUG:  waiting for incoming data on socket...
+01:25:09 PM <module>() DEBUG:  receiving a connection from: 
+01:25:09 PM <module>() DEBUG:  ('127.0.0.1', 51616)
+01:25:09 PM <module>() DEBUG:  message that was received was: hey there, server!
+01:25:09 PM <module>() INFO:  hey there, server!
+01:25:09 PM <module>() INFO:  ('127.0.0.1', 51616)
+01:25:09 PM <module>() DEBUG:  closing socket
+05:02:43 PM <module>() INFO:  entered main
+05:02:43 PM <module>() DEBUG:  opening socket
+05:02:43 PM <module>() DEBUG:  setting socket resuse at: 1
+05:02:43 PM <module>() DEBUG:  binding socket at port: 5001
+05:02:43 PM <module>() DEBUG:  waiting for incoming data on socket...
+05:02:43 PM <module>() DEBUG:  creating thread for sending
+05:02:43 PM <module>() DEBUG:  creating thread for sending
+05:02:43 PM <module>() DEBUG:  creating thread for sending
+05:02:43 PM <module>() DEBUG:  creating thread for sending
+05:02:43 PM <module>() DEBUG:  creating thread for sending
+05:02:43 PM <module>() DEBUG:  creating thread for sending
+05:02:43 PM <module>() DEBUG:  creating thread for sending
+05:02:43 PM <module>() DEBUG:  creating thread for sending
+05:02:43 PM <module>() DEBUG:  creating thread for sending
+05:02:43 PM <module>() DEBUG:  creating thread for sending
+05:02:43 PM <module>() DEBUG:  creating a thread for receiving
+05:02:43 PM <module>() DEBUG:  creating a thread for receiving
+05:02:43 PM <module>() DEBUG:  creating a thread for receiving
+05:02:43 PM <module>() DEBUG:  creating a thread for receiving
+05:02:43 PM <module>() DEBUG:  creating a thread for receiving
+05:02:43 PM <module>() DEBUG:  creating a thread for receiving
+05:02:43 PM <module>() DEBUG:  creating a thread for receiving
+05:02:43 PM <module>() DEBUG:  creating a thread for receiving
+05:02:43 PM <module>() DEBUG:  creating a thread for receiving
+05:02:43 PM <module>() DEBUG:  creating a thread for receiving
+05:02:43 PM <module>() DEBUG:  closing socket
+05:02:55 PM server_recv() DEBUG:  receiving a connection from: 
+05:02:55 PM server_recv() DEBUG:  ('127.0.0.1', 36834)
+05:02:55 PM server_recv() DEBUG:  message that was received was: ssup
+05:02:55 PM server_recv() INFO:  ssup
+05:02:55 PM server_recv() INFO:  ('127.0.0.1', 36834)
+05:12:31 PM <module>() INFO:  entered main
+05:12:31 PM <module>() DEBUG:  opening socket
+05:12:31 PM <module>() DEBUG:  setting socket resuse at: 1
+05:12:31 PM <module>() DEBUG:  binding socket at port: 5001
+05:12:31 PM <module>() DEBUG:  waiting for incoming data on socket...
+05:12:31 PM <module>() DEBUG:  creating thread for sending
+05:12:31 PM <module>() DEBUG:  creating thread for sending
+05:12:31 PM <module>() DEBUG:  creating thread for sending
+05:12:31 PM <module>() DEBUG:  creating thread for sending
+05:12:31 PM <module>() DEBUG:  creating thread for sending
+05:12:31 PM <module>() DEBUG:  creating thread for sending
+05:12:31 PM <module>() DEBUG:  creating thread for sending
+05:12:31 PM <module>() DEBUG:  creating thread for sending
+05:12:31 PM <module>() DEBUG:  creating thread for sending
+05:12:31 PM <module>() DEBUG:  creating thread for sending
+05:12:31 PM <module>() DEBUG:  creating a thread for receiving
+05:12:31 PM <module>() DEBUG:  creating a thread for receiving
+05:12:31 PM <module>() DEBUG:  creating a thread for receiving
+05:12:31 PM <module>() DEBUG:  creating a thread for receiving
+05:12:31 PM <module>() DEBUG:  creating a thread for receiving
+05:12:31 PM <module>() DEBUG:  creating a thread for receiving
+05:12:31 PM <module>() DEBUG:  creating a thread for receiving
+05:12:31 PM <module>() DEBUG:  creating a thread for receiving
+05:12:31 PM <module>() DEBUG:  creating a thread for receiving
+05:12:31 PM <module>() DEBUG:  creating a thread for receiving
+05:12:31 PM <module>() DEBUG:  closing socket
+05:12:49 PM server_recv() DEBUG:  receiving a connection from: 
+05:12:49 PM server_recv() DEBUG:  ('127.0.0.1', 55179)
+05:12:49 PM server_recv() DEBUG:  message that was received was: hello
+05:12:49 PM server_recv() INFO:  hello
+05:12:49 PM server_recv() INFO:  ('127.0.0.1', 55179)
+05:12:53 PM server_recv() DEBUG:  receiving a connection from: 
+05:12:53 PM server_recv() DEBUG:  ('127.0.0.1', 42883)
+05:12:53 PM server_recv() DEBUG:  message that was received was: hi
+05:12:53 PM server_recv() INFO:  hi
+05:12:53 PM server_recv() INFO:  ('127.0.0.1', 42883)
+05:13:40 PM <module>() INFO:  entered main
+05:13:40 PM <module>() DEBUG:  opening socket
+05:13:40 PM <module>() DEBUG:  setting socket resuse at: 1
+05:13:40 PM <module>() DEBUG:  binding socket at port: 5001
+05:13:40 PM <module>() DEBUG:  waiting for incoming data on socket...
+05:13:40 PM <module>() DEBUG:  creating thread for sending
+05:13:40 PM <module>() DEBUG:  creating thread for sending
+05:13:40 PM <module>() DEBUG:  creating thread for sending
+05:13:40 PM <module>() DEBUG:  creating thread for sending
+05:13:40 PM <module>() DEBUG:  creating thread for sending
+05:13:40 PM <module>() DEBUG:  creating thread for sending
+05:13:40 PM <module>() DEBUG:  creating thread for sending
+05:13:40 PM <module>() DEBUG:  creating thread for sending
+05:13:40 PM <module>() DEBUG:  creating thread for sending
+05:13:40 PM <module>() DEBUG:  creating thread for sending
+05:13:40 PM <module>() DEBUG:  creating a thread for receiving
+05:13:40 PM <module>() DEBUG:  creating a thread for receiving
+05:13:40 PM <module>() DEBUG:  creating a thread for receiving
+05:13:40 PM <module>() DEBUG:  creating a thread for receiving
+05:13:40 PM <module>() DEBUG:  creating a thread for receiving
+05:13:40 PM <module>() DEBUG:  creating a thread for receiving
+05:13:40 PM <module>() DEBUG:  creating a thread for receiving
+05:13:40 PM <module>() DEBUG:  creating a thread for receiving
+05:13:40 PM <module>() DEBUG:  creating a thread for receiving
+05:13:40 PM <module>() DEBUG:  creating a thread for receiving
+05:13:40 PM <module>() DEBUG:  closing socket
+06:55:43 PM server() INFO:  entered server
+06:55:43 PM server() INFO:  the server is up and running on designated port: 5001
+06:55:43 PM server() INFO:  the ip address of the chat server is the public ip of this server
+07:06:01 PM server() INFO:  entered server
+07:06:01 PM server() INFO:  the server is up and running on designated port: 5001
+07:06:01 PM server() INFO:  the ip address of the chat server is the public ip of this server
+07:06:16 PM server() DEBUG:  <socket._socketobject object at 0x7fd5366ad280>
+07:06:16 PM server() INFO:  new connection request, satisfying: if sock == s
+07:06:32 PM server() DEBUG:  <socket._socketobject object at 0x7fd5366ad280>
+07:06:32 PM server() INFO:  new connection request, satisfying: if sock == s
+07:06:42 PM server() DEBUG:  <socket._socketobject object at 0x7fd5366ad280>
+07:06:42 PM server() INFO:  new connection request, satisfying: if sock == s
+07:06:46 PM server() DEBUG:  <socket._socketobject object at 0x7fd5366ad280>
+07:06:46 PM server() INFO:  new connection request, satisfying: if sock == s
+08:29:11 PM <module>() INFO:  ipaddress to connect to is: 127.0.0.1
+08:29:11 PM <module>() INFO:  port ot connect to is: 5001
+08:30:02 PM <module>() INFO:  ipaddress to connect to is: 127.0.0.1
+08:30:02 PM <module>() INFO:  port ot connect to is: 5001
+08:30:27 PM <module>() DEBUG:  127.0.0.1
+08:30:27 PM <module>() INFO:  ipaddress to connect to is: 127.0.0.1
+08:30:27 PM <module>() INFO:  port ot connect to is: 5001
+08:30:32 PM <module>() DEBUG:  127.0.0.1
+08:30:32 PM <module>() INFO:  ipaddress to connect to is: 127.0.0.1
+08:30:32 PM <module>() INFO:  port ot connect to is: 5001
+08:32:05 PM <module>() DEBUG:  127.0.0.1
+08:32:05 PM <module>() INFO:  ipaddress to connect to is: 127.0.0.1
+08:32:05 PM <module>() INFO:  port ot connect to is: 5001
+08:33:13 PM <module>() DEBUG:  127.0.0.1
+08:33:13 PM <module>() INFO:  ipaddress to connect to is: 127.0.0.1
+08:33:13 PM <module>() INFO:  port ot connect to is: 5001
+08:33:35 PM <module>() DEBUG:  127.0.0.1
+08:33:35 PM <module>() INFO:  ipaddress to connect to is: 127.0.0.1
+08:33:35 PM <module>() INFO:  port ot connect to is: 5001
+08:33:43 PM <module>() DEBUG:  127.0.0.1
+08:33:43 PM <module>() INFO:  ipaddress to connect to is: 127.0.0.1
+08:33:43 PM <module>() INFO:  port ot connect to is: 5001
+08:33:53 PM <module>() DEBUG:  127.0.0.1
+08:33:53 PM <module>() INFO:  ipaddress to connect to is: 127.0.0.1
+08:33:53 PM <module>() INFO:  port ot connect to is: 5001
+08:33:58 PM <module>() DEBUG:  127.0.0.1
+08:33:58 PM <module>() INFO:  ipaddress to connect to is: 127.0.0.1
+08:33:58 PM <module>() INFO:  port ot connect to is: 5001
+08:34:40 PM <module>() DEBUG:  127.0.0.1
+08:34:40 PM <module>() INFO:  ipaddress to connect to is: 127.0.0.1
+08:34:40 PM <module>() INFO:  port ot connect to is: 5001
+08:34:40 PM <module>() DEBUG:  closing socket
+08:40:07 PM <module>() DEBUG:  closing socket
+08:40:29 PM <module>() DEBUG:  closing socket
+08:41:11 PM <module>() DEBUG:  closing socket
+08:42:13 PM <module>() DEBUG:  ipaddress: 127.0.0.1
+08:42:13 PM <module>() DEBUG:  port: 5001
+08:42:13 PM <module>() DEBUG:  closing socket
+10:59:45 PM <module>() DEBUG:  ipaddress: 127.0.0.1
+10:59:45 PM <module>() DEBUG:  port: 5001
+11:00:08 PM <module>() DEBUG:  ipaddress: 127.0.0.1
+11:00:08 PM <module>() DEBUG:  port: 5001

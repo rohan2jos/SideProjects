@@ -1,0 +1,178 @@
+/usr/bin/python2.7 /home/rohan/Documents/PythonLearning/Storage/Storage.py
+entered the class Storage, and initializing the values
+[Storage.__init__()] initializing self.storage dictionary to blank dictionary
+[Storage.__init__()] printing blank dictionary to check if it has been initialized
+[Store.__init__()] creating object for Store
+[Store.__init__()] initializing directory for buckets on system
+{}
+1. display list of buckets
+2. display buckets and their contents
+3. create a bucket
+4. create a bucket and store a file
+5. store a file in an existing bucket
+6. exit
+7. cleanup (requires password)
+please enter an option :: 3
+creating a bucket
+enter the bucket namerohab
+[Storage.createBucket()] received bucket name and file name
+[]
+[Storage.createBucketHelper()] received request for bucket with bucket name rohab
+[Storage.checkMainBucketList()] the main bucket list does not contain bucket name, proceed...
+[Store.createEmptyBucket] trying to create an empty bucket with bucket name as rohab
+[Storage.createBucketHelper()] the name is not duplicate, inseriting name into bucketList[]
+the bucket was created!
+1. display list of buckets
+2. display buckets and their contents
+3. create a bucket
+4. create a bucket and store a file
+5. store a file in an existing bucket
+6. exit
+7. cleanup (requires password)
+please enter an option :: 5
+storing a file in an existing bucket
+----------------------list of buckets-------------------
+bucket name                |       rohab
+--------------------------------------------------------
+please enter the bucket in which you want to store the file:: rohab
+['rohab']
+if rohab is rohab
+returning true!
+please enter the path of the file with the name of the file:: /home/rohan/Documents/PythonLearning/Storage/test.txt
+[Storage.creator()] calling the createObject() and createFileObject()
+[Storage.CreateObject()] populating the storage dictionary with the file that has been sent
+[Storage.createFileObject()] serializing the file object before it can be stored
+[FileObject.__init__] creating the object for file
+[FileObject.createMetadata()] entering the metadata for the file object
+[FileObject.createMetadata()] printing the created metadata
+2017-04-17 20:51
+test
+[FileObject.returnSelf()] the file object has been created, now returning so it can be stored
+[Storage.createFileObject()] printing a class variable from returned file object :: test
+[Storage.createFileObject()] trying to serialize and store the object into bucket: rohab
+[Store.insertIntoStoreList()] received tempfile :: test with bucketname:: rohab
+[Storage.checkMainBucketList()] the main bucket list does not contain bucket name, proceed...
+[Store.insertIntoStoreList()] inserting the object into a storage list
+[Store.insertIntoStoreList()] printing the current list
+['test']
+[Store.serializeAndStore()] serializing and storing the object in the bucket
+the name is duplicate!
+problem in creating the bucket
+creating serialized file with name test
+unserialized object filename:::: test
+unserialized object timestamp:::: 2017-04-17 20:51
+[!Storage.createFileObject.insertionattempt!] the object has been stored!
+[Storage.createFileObject()] the object has been initialized.  Please check debug comments starting with FileObject
+1. display list of buckets
+2. display buckets and their contents
+3. create a bucket
+4. create a bucket and store a file
+5. store a file in an existing bucket
+6. exit
+7. cleanup (requires password)
+please enter an option :: 2
+displaying buckets and their contents
+bucket name:: rohab
+contents::
+test
+1. display list of buckets
+2. display buckets and their contents
+3. create a bucket
+4. create a bucket and store a file
+5. store a file in an existing bucket
+6. exit
+7. cleanup (requires password)
+please enter an option :: 4
+creating a bucket and storing a file
+creating a bucket
+enter the bucket namerohan
+[Storage.createBucket()] received bucket name and file name
+['rohab']
+[Storage.createBucketHelper()] received request for bucket with bucket name rohan
+[Storage.checkMainBucketList()] the main bucket list does not contain bucket name, proceed...
+[Store.createEmptyBucket] trying to create an empty bucket with bucket name as rohan
+[Storage.createBucketHelper()] the name is not duplicate, inseriting name into bucketList[]
+the bucket was created!
+[Storage.creator()] calling the createObject() and createFileObject()
+[Storage.CreateObject()] populating the storage dictionary with the file that has been sent
+[Storage.createFileObject()] serializing the file object before it can be stored
+[FileObject.__init__] creating the object for file
+[FileObject.createMetadata()] entering the metadata for the file object
+[FileObject.createMetadata()] printing the created metadata
+2017-04-17 20:52
+test
+[FileObject.returnSelf()] the file object has been created, now returning so it can be stored
+[Storage.createFileObject()] printing a class variable from returned file object :: test
+[Storage.createFileObject()] trying to serialize and store the object into bucket: rohan
+[Store.insertIntoStoreList()] received tempfile :: test with bucketname:: rohan
+[Storage.checkMainBucketList()] the main bucket list does not contain bucket name, proceed...
+[Store.insertIntoStoreList()] inserting the object into a storage list
+[Store.insertIntoStoreList()] printing the current list
+['test', 'test']
+[Store.serializeAndStore()] serializing and storing the object in the bucket
+the name is duplicate!
+problem in creating the bucket
+creating serialized file with name test
+unserialized object filename:::: test
+unserialized object timestamp:::: 2017-04-17 20:52
+[!Storage.createFileObject.insertionattempt!] the object has been stored!
+[Storage.createFileObject()] the object has been initialized.  Please check debug comments starting with FileObject
+1. display list of buckets
+2. display buckets and their contents
+3. create a bucket
+4. create a bucket and store a file
+5. store a file in an existing bucket
+6. exit
+7. cleanup (requires password)
+please enter an option :: 1
+displaying the list of buckets
+----------------------list of buckets-------------------
+bucket name                |       rohab
+bucket name                |       rohan
+--------------------------------------------------------
+1. display list of buckets
+2. display buckets and their contents
+3. create a bucket
+4. create a bucket and store a file
+5. store a file in an existing bucket
+6. exit
+7. cleanup (requires password)
+please enter an option :: 2
+displaying buckets and their contents
+bucket name:: rohan
+contents::
+test
+bucket name:: rohab
+contents::
+test
+1. display list of buckets
+2. display buckets and their contents
+3. create a bucket
+4. create a bucket and store a file
+5. store a file in an existing bucket
+6. exit
+7. cleanup (requires password)
+please enter an option :: 7
+starting cleanup, better be sober start? [yes/no]: yes
+godspeed!
+THIS IS THE CLEANUP FUNCTION!!! IT WILL DESTROY EVERYTHING AT THE BACKEND
+please enter the password for the server so that this function can proceed:: hastalavista
+HOPE YOU KNOW WHAT YOU ARE DOING
+cleaning the data structures in the store
+...cleaning MainBucketList...
+...cleaning mainContentsDirectory...
+...cleaning storageList...
+...cleaning storageNameList...
+cleaning up the directory on the system
+1. display list of buckets
+2. display buckets and their contents
+3. create a bucket
+4. create a bucket and store a file
+5. store a file in an existing bucket
+6. exit
+7. cleanup (requires password)
+please enter an option :: 6
+starting backup before exiting
+exiting...
+
+Process finished with exit code 0
