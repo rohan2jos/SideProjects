@@ -1,0 +1,27 @@
+2017-04-06 00:40 starting log
+2017-04-06 00:40 [Proxy.visit()] user is trying to visit: www.google.com/images
+2017-04-06 00:40 [Proxy.visit()] checking blacklist 
+2017-04-06 00:40 [Proxy.visit()] address partially/fully matches: www.google.com ( in blacklist )  in user attempt: www.google.com/images
+2017-04-06 00:40 [Proxy.visit()] address matches a record in the blacklist, aborting
+2017-04-06 00:40 [Proxy.visit()] user is trying to visit: stackoverflow.com
+2017-04-06 00:40 [Proxy.visit()] checking blacklist 
+2017-04-06 00:40 [Proxy.visit()] address not in blacklist, forwarding
+2017-04-06 00:40 response:: 
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+X-Request-Guid: 57373700-a98e-4060-b03f-6eaba9bf328a
+Content-Length: 224607
+Accept-Ranges: bytes
+Date: Thu, 06 Apr 2017 05:40:32 GMT
+Via: 1.1 varnish
+Connection: close
+X-Served-By: cache-dfw1827-DFW
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1491457232.956733,VS0,VE91
+Vary: Fastly-SSL
+X-DNS-Prefetch-Control: off
+Set-Cookie: prov=ba882221-9449-22d8-f229-e2c191ac283e; domain=.stackoverflow.com; expires=Fri, 01-Jan-2055 00:00:00 GMT; path=/; HttpOnly
+

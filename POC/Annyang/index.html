@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>annyang! example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.4.0/annyang.js"></script>
+    <style>
+        #results {
+            background-color: #eee;
+            padding:50px;
+            border:1px solid #000;
+            width:25px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="results"></div>
+    <p>
+    Say 'show me green' <br />
+    Say 'show me red' <br />
+    Say 'show me purple' <br />
+    Say 'show me blue' <br />
+    Say 'show me ' & any HTML color <br />
+    </p>
+   
+<script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.4.0/annyang.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
+<script>
+if (annyang) {
+  // Add our commands to annyang
+  annyang.addCommands({
+    'hello': function() { alert('Hello world!'); }
+  });
+
+  // Tell KITT to use annyang
+  SpeechKITT.annyang();
+
+  // Define a stylesheet for KITT to use
+  SpeechKITT.setStylesheet('//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/themes/flat.css');
+
+  // Render KITT's interface
+  SpeechKITT.vroom();
+}
+</script>
+</script>
+</body>
+</html>
