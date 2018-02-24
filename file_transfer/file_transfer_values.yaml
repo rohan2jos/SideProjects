@@ -1,14 +1,16 @@
 # hostname is the ip address of the backup server
 # the hostname HAS to be specified as a string value
-hostname: "127.0.0.1"
+hostname: " "
 
 # the source_dir is the directory which has to be copied or backed up to the remote
 # backup server.  This HAS to be specified as a string value
-source_dir: "/home/rohan/Documents/Programs/sideprojects/side_programs/source_dir/"
+# specify absolute path
+source_dir: " "
 
 # the remote_dir is the directory TO which the source_dir will be backed up to
 # in the remote backup server.  This HAS to be specified as a string value
-remote_dir: "/home/rohan/Documents/Programs/sideprojects/side_programs/test/"
+# specify absolute path
+remote_dir: " "
 
 # leave the specify_password as False if you do not want to specify the password
 # of the remote backup server in this file as plaintext value
