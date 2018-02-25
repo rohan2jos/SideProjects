@@ -4,6 +4,8 @@ import os
 import sys
 import logging
 import yaml
+import datetime
+import tarfile
 from fabric.api import execute, put
 from fabric.network import disconnect_all
 
@@ -97,14 +99,28 @@ class File_Transfer:
 
     def backup_files(self):
         logging.debug("backing up files to remote server")
+        currentDT = datetime.datetime.now()
+        self.tar_file_name = "backup-" + currentDT.strftime("%Y-%m-%d") + ".tar.gz"
+
+        logging.debug("archiving current files to move to server")
+        print("compressing current tree")
+        with tarfile.open(self.tar_file_name,"w:gz") as tar:
+            tar.add(self.source_dir, arcname=os.path.basename(self.source_dir))
+        file_to_send = self.tar_file_name
         print("begin copy of files to backup server")
         try:
-            s = execute(put, self.source_dir, self.remote_dir, host=self.hostname)
+            s = execute(put, file_to_send, self.remote_dir, host=self.hostname)
             print(repr(s))
         finally:
             disconnect_all()
 
         logging.debug("complete...")
+        self.cleanup()
+
+    def cleanup(self):
+        logging.debug("removing generated tar file")
+        print("removing generated tar file")
+        os.system("rm " + self.tar_file_name)
 
 
 ft = File_Transfer()
